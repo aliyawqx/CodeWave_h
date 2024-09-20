@@ -132,6 +132,7 @@ public class MainActivity extends AppCompatActivity {
             return true;
         } else if (item_id == R.id.teams){
             Intent intent = new Intent(MainActivity.this, TeamsActivity.class);
+            intent.putExtra("key", key);
             startActivity(intent);
             return true;
         } else if (item_id == R.id.myProfile){

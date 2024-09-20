@@ -54,6 +54,7 @@ public class InfoTeamsActivity extends AppCompatActivity {
         String description = i.getStringExtra("description");
         String score = i.getStringExtra("score");
         String contactInfoStr = i.getStringExtra("contactInfo");
+        String key = i.getStringExtra("key");
 
         nameOfCh.setText(nameOfChStr);
         address.setText(addressStr);
@@ -64,6 +65,9 @@ public class InfoTeamsActivity extends AppCompatActivity {
         buyBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(InfoTeamsActivity.this, TeamsActivity.class);
+                intent.putExtra("key", key);
+                startActivity(intent);
                 finishAndRemoveTask();
             }
         });

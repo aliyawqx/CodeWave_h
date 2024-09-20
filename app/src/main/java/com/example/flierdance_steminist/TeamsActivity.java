@@ -41,6 +41,7 @@ public class TeamsActivity extends AppCompatActivity {
     DatabaseReference teams;
     List<String> city, score;
     ArrayList<Team> teamArrayList = new ArrayList<>();
+    String key;
     private static final int TEAMSACTIVITY = 1;
 
     @Override
@@ -51,6 +52,8 @@ public class TeamsActivity extends AppCompatActivity {
 
         SearchView searchView = findViewById(R.id.search);
         searchView.clearFocus();
+        Intent i = new Intent();
+        key = i.getStringExtra("key");
 
         myList = findViewById(R.id.listView);
         adapter = new Adapter(getApplicationContext(), teamArrayList);
@@ -85,22 +88,6 @@ public class TeamsActivity extends AppCompatActivity {
 
         db = FirebaseDatabase.getInstance("https://flierdance-3f911-default-rtdb.europe-west1.firebasedatabase.app/");
         teams = db.getReference().child("Teams");
-        myList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                String id = (String) view.getTag();
-                for (Team s : teamArrayList) {
-                    if (s.getKey().equals(id)) {
-                        Intent intent = new Intent(TeamsActivity.this,
-                                EditStudioActivity.class);
-                        intent.putExtra("key", id);
-                        startActivityForResult(intent, TEAMSACTIVITY);
-                        finishAndRemoveTask();
-                        break;
-                    }
-                }
-            }
-        });
 
         teams.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -128,6 +115,7 @@ public class TeamsActivity extends AppCompatActivity {
                     if (s.getKey().equals(id)) {
                         Intent intent = new Intent(getApplicationContext(),
                                 InfoTeamsActivity.class);
+                        intent.putExtra("key", key);
                         intent.putExtra("name", s.getName());
                         intent.putExtra("city", s.getCity());
                         intent.putExtra("description", s.getDescription());
