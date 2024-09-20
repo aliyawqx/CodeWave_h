@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C4BA9DFF"
+    tools:context=".InfoActivity"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            android:background="#C4BA9DFF">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="false"
+                tools:ignore="MissingConstraints"></ScrollView>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@mipmap/ic_launcher"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/nameOfCh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name of team"
+                android:paddingTop="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profileAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:hint="City"
+                android:padding="8dp"
+                android:textSize="20dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_bg"
+                android:hint="Address"
+                android:padding="8dp"
+                android:paddingStart="25dp"
+                android:textSize="20dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/profileContactInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:hint="Contact info"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/contactInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_bg"
+                android:paddingStart="25dp"
+                android:textSize="20dp"
+                android:hint="Contact info"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/profilePrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:hint="Description"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_bg"
+                android:paddingStart="25dp"
+                android:textSize="20dp"
+                android:hint="Description"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                    android:id="@+id/profileDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:hint="Score"
+                    android:textColor="@color/black" />
+
+            <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_bg"
+                    android:paddingStart="25dp"
+                    android:layout_weight="1"
+                    android:textSize="19dp"
+                    android:hint="Score"
+                    android:padding="8dp"
+                    android:textColor="@color/black" />
+
+
+            <Button
+                android:id="@+id/buyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="Back"
+                android:textSize="18sp"
+                app:cornerRadius="20dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

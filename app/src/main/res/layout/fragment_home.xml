@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCBA9DFF"
+    android:id="@+id/content_frame"
+    tools:context=".HomeFragment">
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/search"
+        android:layout_margin="8dp"
+        android:background="@drawable/input_bg"
+        android:queryHint="Search"></SearchView>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"></Spinner>
+
+    <Spinner
+        android:id="@+id/spinnerPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="60dp"></Spinner>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"
+        android:padding="10dp" >
+
+    </ListView>
+</FrameLayout>

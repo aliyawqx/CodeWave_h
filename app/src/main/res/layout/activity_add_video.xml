@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".AddVideoActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:background="@drawable/input_bg_purple"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <VideoView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/uploadVideo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="100dp"
+            android:background="@color/background"
+            android:backgroundTint="@color/background"
+            android:scaleType="fitXY"></VideoView>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="-50dp"
+            android:indeterminateTint="@color/white"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-65dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/uploadCaption"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.6"
+                android:background="@drawable/input_bg_purple"
+                android:hint="Add a caption..."
+                android:padding="16dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/uploadButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="#C4BA9DFF"
+                android:src="@drawable/baseline_send_24"
+                app:tint="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

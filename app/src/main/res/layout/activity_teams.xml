@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#C4BA9DFF"
+    tools:context=".TeamsActivity"
+    android:layout_marginTop="100dp">
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/search"
+        android:layout_margin="8dp"
+        android:background="@drawable/input_bg"
+        android:queryHint="Search"></SearchView>
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"
+        android:padding="10dp" >
+
+    </ListView>
+
+</RelativeLayout>

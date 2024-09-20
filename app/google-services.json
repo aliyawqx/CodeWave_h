@@ -1,0 +1,119 @@
+{
+  "project_info": {
+    "project_number": "112626199561",
+    "firebase_url": "https://flier-dance-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "flier-dance",
+    "storage_bucket": "flier-dance.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112626199561:android:8f47ab934d919ce98d9cd8",
+        "android_client_info": {
+          "package_name": "com.example.flier_dance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112626199561-bhvup0q7jfspemju718oia81gnhsueke.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYCnEUIAd7GBT_vBWrNtfnsraN2ngmzc4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "112626199561-bhvup0q7jfspemju718oia81gnhsueke.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "112626199561-ogro6rh9n2f97rlcjbbud9bqooi6rmbq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flierdance"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112626199561:android:09c41f4f7ad97ba58d9cd8",
+        "android_client_info": {
+          "package_name": "com.example.flierdance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112626199561-bhvup0q7jfspemju718oia81gnhsueke.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYCnEUIAd7GBT_vBWrNtfnsraN2ngmzc4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "112626199561-bhvup0q7jfspemju718oia81gnhsueke.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "112626199561-ogro6rh9n2f97rlcjbbud9bqooi6rmbq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flierdance"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112626199561:android:d613661b9cb0fa3a8d9cd8",
+        "android_client_info": {
+          "package_name": "com.example.flierdance_steminist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112626199561-bhvup0q7jfspemju718oia81gnhsueke.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYCnEUIAd7GBT_vBWrNtfnsraN2ngmzc4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "112626199561-bhvup0q7jfspemju718oia81gnhsueke.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "112626199561-ogro6rh9n2f97rlcjbbud9bqooi6rmbq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flierdance"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
